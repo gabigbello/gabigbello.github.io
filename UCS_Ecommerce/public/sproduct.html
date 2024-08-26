@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCS - Your Clothing Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="../jquery/jquery-3.7.1.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section id="header">
+        <a href="index.html"><img src="../img/ucslogo-nobg.png" alt="logo" class="logo"/></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active"  href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+                <a href="#" id="close"><i class='bx bx-x' ></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="../img/products/f1.jpg" width="100%" id="Main-Img" alt="">
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="../img/products/f1.jpg" width="100%"  class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f2.jpg" width="100%"  class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f3.jpg" width="100%"  class="small-img" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="../img/products/f4.jpg" width="100%"  class="small-img" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="single-pro-details">
+            <h6>Home / T-shirt</h6>
+            <h4>Men's Fashion T Shirt</h4>
+            <h2>$ 139.00</h2>
+            <select id="product-size">
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXl</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+            <input id="quantity-input" type="number" value="1" min="1">
+            <button id="add-to-cart" class="normal" data-id="1">Add to Cart</button>
+            <h4>Product Details</h4>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum porttitor mi mattis diam imperdiet tincidunt. Nam feugiat nibh leo, sit amet ultrices quam tincidunt eu. Vivamus fringilla venenatis pretium. Quisque sodales elit mi, id bibendum quam rutrum eget. Sed venenatis tempus nisi a luctus. Nunc elementum facilisis sapien, in placerat purus tincidunt eu. Maecenas vehicula ullamcorper sagittis. Nunc interdum odio bibendum dolor dictum, quis posuere odio dignissim. Fusce ligula dolor, gravida a bibendum vitae, vulputate in magna. Vestibulum vulputate bibendum volutpat.</span>
+        </div>
+    </section>
+
+    <section class="section-p1" id="product1">
+        <h2>Featured Products</h2>
+        <p>Our brand new collection for this summer</p>
+        <div class="pro-container">
+            
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up to receive our discounts in first hand!</h4>
+            <p>We will e-mail you with any updates about <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img  class="logo" src="../img/ucslogo-nobg.png" alt="Logo"/>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Washington Road, Street 3A, San Francisco</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us:</h4>
+                <div class="logos">
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt=""/>
+                <img src="../img/pay/play.jpg" alt=""/>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="/img/pay/pay.png" alt=""/>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Gabriela Bello</p>
+        </div>
+    </footer>
+
+    <script>
+        var MainImg = document.getElementById("Main-Img");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+    </script>
+
+    <script src="../index.js"></script>
+</body>
+</html>

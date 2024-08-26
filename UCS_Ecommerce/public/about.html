@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCS - Your Clothing Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="../jquery/jquery-3.7.1.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="../img/ucslogo-nobg.png" alt="logo" class="logo"/></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+                <a href="#" id="close"><i class='bx bx-x' ></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class='bx bx-shopping-bag'></i></a>
+            <i id="bar" class='bx bx-menu'></i>
+        </div>
+    </section>
+
+    <section id="page-intro">
+        <img src="../img/store.jpg" class="store-img" alt="store">
+        <h2>Know us</h2>
+    </section>
+
+    <section id="about-us" class="section-p1">
+        <img src="../img/teamimg.jpg" id="team-img" alt="">
+        <div class="info-us">
+            <h2>Who we are</h2>
+            <p>Nulla nec ante accumsan lacus consequat laoreet. Quisque ut eros quis arcu volutpat lobortis. Phasellus a tellus at diam aliquam aliquet. Nam non nisi justo. Aliquam non rutrum nibh. Sed commodo auctor nulla in porttitor. Praesent viverra consectetur nisi, in porttitor tellus ultrices vitae. Duis risus elit, suscipit in nulla nec, tincidunt malesuada eros. Fusce eu ornare lectus. Mauris lacinia lorem nec libero sollicitudin pulvinar. Donec sit amet sapien vel est rhoncus tempor. Aliquam sed est vitae nibh eleifend imperdiet vel ac neque.</p>
+        </div>
+    </section>
+
+    <section id="about-app" class="section-p1">
+        <h4>Download Our App: <a href="#">Click here!</a></h4>
+        <div class="video">
+            <video autoplay muted loop src="../img/about/1.mp4"></video>
+        </div>
+    </section>
+
+    <section class="section-p1" id="feature">
+        <div class="fe-box">
+            <i class='bx bxs-ship'></i>
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <i class='bx bx-laptop'></i>
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box">
+            <i class='bx bx-credit-card' ></i>
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <i class='bx bxs-offer' ></i>
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <i class='bx bx-happy-alt'></i>
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <i class='bx bx-support' ></i>
+            <h6>Support 24h</h6>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign Up to receive our discounts in first hand!</h4>
+            <p>We will e-mail you with any updates about <span>special offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your e-mail address">
+            <button>Sign up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img  class="logo" src="../img/ucslogo-nobg.png" alt="Logo"/>
+            <h4>Contact</h4>
+            <p><strong>Address:</strong> 562 Washington Road, Street 3A, San Francisco</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow us:</h4>
+                <div class="logos">
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-youtube' ></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="../img/pay/app.jpg" alt=""/>
+                <img src="../img/pay/play.jpg" alt=""/>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="/img/pay/pay.png" alt=""/>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024, Gabriela Bello</p>
+        </div>
+    </footer>
+
+    <script src="../index.js"></script>
+</body>
+</html>
