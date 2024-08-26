@@ -1,0 +1,257 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins",sans-serif;
+}
+
+:root{
+    --bg-color: #080808;
+    --second-bg-color:#1b0000;
+    --text-color:white;
+    --main-color:#ff9900;
+}
+
+html{
+    font-size:60%;
+    overflow-x: hidden;
+}
+
+body{
+    background:var(--bg-color);
+    color:var(--text-color);
+    cursor:none;
+}
+
+a{
+    cursor:none;
+}
+
+.cursor{
+    position:absolute;
+    height:20px;
+    width:20px;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}   
+
+.outer{
+    border: 1px solid var(--main-color);
+}
+
+.inner{
+    background: var(--main-color);
+    opacity: 0.1;
+    transition: 250ms ease-out;
+}
+
+.cursor.hover{
+    transform: translate(-50%,-50%) scale(2);
+    transition: transform 250ms ease-in-out;
+}
+
+.inner.hover{
+    background: var(--main-color);
+    mix-blend-mode: difference;
+}
+
+section{
+    min-height: 100vh;
+    padding: 15rem 12% 10rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12rem;
+}
+
+.home-content{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: left;
+    justify-content: center;
+}
+
+span{
+    color:var(--main-color);
+}
+
+/* PÁGINAS DOS PROJETOS */
+
+/*MENU*/
+
+.menu-btn-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    padding: 15rem 12% 1rem;
+}
+
+.menu-btn-title button{
+    background-color: var(--main-color);
+    padding:10px;
+    color:var(--bg-color);
+    border-radius:10%;
+    font-weight: 700;
+    cursor:pointer;
+}
+
+.menu-btn-title h2{
+    font-size: 26px;
+    color:gainsboro;
+    font-weight: 300;
+    border-bottom: 1px solid gainsboro;
+    letter-spacing: 20px;
+}
+
+/*IMAGEM PRINCIPAL*/
+.imagem-principal{
+    display:flex;
+}
+
+.imagem-principal img{
+    width:80%;
+    border-radius: 10px;
+    border-right:1px solid gainsboro;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding-right: 50px;
+}
+
+.imagem-principal .icons .recursos ol li{
+    list-style: none;
+}
+
+.imagem-principal .icons .recursos{
+    display: flex;
+    margin-left:10px;
+    margin-top:40px;
+}
+
+.imagem-principal .icons .recursos h3{
+    font-size: 14px;
+    padding-top:20px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+.imagem-principal .icons .recursos ol{
+    display:flex;
+}
+
+.imagem-principal .icons .recursos ol li{
+    font-size:40px;
+}
+
+.imagem-principal .icons{
+    display:flex;
+    flex-direction: column;
+}
+
+.imagem-principal .icons button{
+    background-color: gainsboro;
+    font-weight: 600;
+    padding:10px;
+    width:100px;
+    margin-bottom:20px;
+    cursor: pointer;
+}
+
+.imagem-principal .icons button:hover{
+    background-color: var(--main-color);
+}
+
+/*INFORMAÇÕES PRINCIPAIS*/
+
+.informacoes-gerais{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:0;
+    height:300px;
+    padding: 15rem 12% 1rem;
+}
+
+.informacoes-gerais .esquerdo{
+    width:20%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid gainsboro;
+    padding-right: 50px;
+    height:300px;
+}
+
+.informacoes-gerais .esquerdo i{
+    font-size: 60px;
+    text-align: center;
+    padding:10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+.informacoes-gerais .esquerdo h3{
+    font-size: 28px;
+    padding-top:10px;
+    font-weight: 200;
+}
+
+.informacoes-gerais .direito{
+    padding-left:50px;
+}
+
+.informacoes-gerais .direito h3{
+    font-size:16px;
+    font-weight: 200;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.informacoes-gerais .direito p{
+    font-size: 11px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+/* RESPONSIVIDADE */
+
+.respons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0;
+    padding-top:0;
+    padding: 15rem 12% 1rem;
+    margin-top:80px;
+}
+
+.respons img{
+    width:80%;
+    border-radius: 10px;
+}
+
+.respons h2{
+    letter-spacing: 12px;
+    padding-left: 10px;
+}
+
+.respons .text{
+    display: flex;
+    flex-direction: column;
+}
+
+.respons .text p{
+    margin-left:10px;
+    margin-top:10px;
+    letter-spacing: 1px;
+}
