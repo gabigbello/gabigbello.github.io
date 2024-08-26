@@ -100,7 +100,10 @@ if (filterbtn.filter('.active').length === 0) {
 
 const panels = $('.panel');
 
-panels.on('click', function() {
+panels.on('click', function(event) {
+    if ($(event.target).is('a') || $(event.target).closest('a').length) {
+    }
+    
     panels.removeClass('active');
     $(this).addClass('active');
 });
