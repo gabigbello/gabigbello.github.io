@@ -788,12 +788,12 @@ tspan{
     opacity:0;
     background-color: #080808;
     color:gainsboro;
-    padding:2px 5px;
-    pointer-events: none; 
+    padding:2px 5px; 
 }
 
 .panel.active{
     flex:12;
+    cursor:url('./cursor.svg'),auto;
 }
 
 .panel.active h1,
