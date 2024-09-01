@@ -107,3 +107,22 @@ panels.on('click', function(event) {
     panels.removeClass('active');
     $(this).addClass('active');
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const elements = document.querySelectorAll('section, #knowledge, #container_one');
+    
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('section-visible');
+                observer.unobserve(entry.target); 
+            }
+        });
+    }, {
+        threshold: 0.1 
+    });
+
+    elements.forEach(el => {
+        observer.observe(el);
+    });
+});
