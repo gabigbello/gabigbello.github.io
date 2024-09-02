@@ -146,14 +146,16 @@ span{
 .home-content h3{
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 4vw;
+    text-wrap: nowrap;
 }
 
 .home-content h1{
-    font-size:6rem;
+    font-size:6vw;
     font-weight: 700;
     margin-top:1.5rem;
     line-height:1;
+    text-wrap: nowrap;
 }
 
 .home-img img{
@@ -241,9 +243,10 @@ span{
 }
 
 .text-animation{
-    font-size: 32px;
+    font-size: 30vw;
     font-weight: 600;
     min-width:280px;
+    text-align: center;
 }
 
 .text-animation span{
@@ -555,6 +558,11 @@ tspan{
 }
 
 /*-----------------------------------*/
+
+.timeline{
+    overflow-x:auto;
+    white-space: nowrap;
+}
 
 .timeline ol{
     font-size: 0;
@@ -915,4 +923,106 @@ section,
 
 
 /* RESPONSIVIDADE */
+
+@media(max-width:1210px){
+    .header .navbar{
+        display: none;
+    }
+
+    .header{
+        justify-content: center;
+        padding: 4rem 0;
+    }
+
+    .logo {
+        margin: 0 auto;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column-reverse;
+        gap:8rem;
+    }
+
+    .home .home-img img{
+        width:200px;
+    }
+
+    .home .home-content{
+        align-items: center;
+    }
+
+    .projects .container-images{
+        flex-direction: column;
+    }
+
+    .panel{
+        height:50vh;
+    }
+
+    .panel.active{
+        flex:10;
+    }
+
+    .panel h1{
+        bottom:500px;
+    }
+
+}
+
+@media(max-width:830px){
+
+    .knowledge .conhecimentos ol{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin-left:10vw;
+        margin-top:10vh;
+        margin-bottom:5vh;
+    }
+
+    .container .content .boxes{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .container{
+        margin-top:10vh;
+    }
+    .container .content .boxes .box_one,
+    .container .content .boxes .box_two{
+        height:40vh;
+    }
+}
+
+@media(max-width:380px){
+    .projects .container-images a{
+        font-size:5vw;
+        left:13px;
+    }
+
+    .projects .container-images button{
+        font-size:3vw;
+    }
+
+    .panel.active{
+        flex:5;
+    }
+
+    .contato{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato .main-info{
+        margin-right:10px;
+    }
+
+    .contato .main-info h2{
+        font-size:5vw;
+        text-align: center;
+    }
+}
 
