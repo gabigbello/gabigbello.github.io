@@ -280,7 +280,7 @@ span{
 @keyframes words{
     0%,
     20%{
-        content:"Ciência de dados & IA";
+        content:"Desenvolvedora Front-end";
     }
     21%,
     40%{
@@ -288,7 +288,7 @@ span{
     }
     41%,
     60%{
-        content: "Automação de processos/RPA";
+        content: "Desenvolvedora Full-stack";
     }
     61%,
     80%{
@@ -296,7 +296,7 @@ span{
     }
     81%,
     100%{
-        content:"Desenvolvedora Front-end";
+        content:"Ciência de dados & IA";
     }
 }
 
