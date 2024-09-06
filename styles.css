@@ -255,7 +255,7 @@ span{
 }
 
 .text-animation span::before{
-    content:"Front-end developer";
+    content:"Automação de processos/RPA";
     color:var(--main-color);
     animation: words 20s infinite;
 }
@@ -280,15 +280,15 @@ span{
 @keyframes words{
     0%,
     20%{
-        content:"Desenvolvedora Front-end";
+        content:"Ciência de dados & IA";
     }
     21%,
     40%{
-        content: "Desenvolvedora Python";
+        content: "Machine Learning";
     }
     41%,
     60%{
-        content: "Desenvolvedora Full-stack";
+        content: "Automação de processos/RPA";
     }
     61%,
     80%{
@@ -296,7 +296,7 @@ span{
     }
     81%,
     100%{
-        content:"Cientista de dados & IA";
+        content:"Desenvolvedora Front-end";
     }
 }
 
@@ -761,13 +761,29 @@ tspan{
     align-items: center;
     height:140vh;
     padding-top:40px;
+    margin-bottom: 0px;
 }
 
-.projects .title-projects h2{
+.projects .title-projects {
+    position: absolute;
+    left: 0; /* Posiciona à esquerda */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin-left:100px;
+    margin-top:250px;
+}
+
+.projects .title-projects h2 {
     transform: rotate(-90deg);
-    font-size: 28px;
-    margin-bottom:120px;
-    color:#ffbb55;
+    font-size: 16px;
+    margin: 0;
+    text-wrap: nowrap;
+    padding: 0;
+    width: 100px;
+    text-align: center;
+    color: #ffbb55;
 }
 
 .projects .container-images{
@@ -861,6 +877,64 @@ tspan{
         display:none;
     }
 }
+
+/* PROJECTS 2 */
+
+.projects-machine .title-projects-machine h2{
+    color: #ffbb55;
+    font-size:20px;
+    margin-bottom: 100px;
+    margin-top:0px;
+}
+
+.projects-machine .container-images-machine .images-machine{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh;
+}
+
+.projects-machine .container-images-machine .images-machine img{
+    width:30%;
+    border-radius: 10%;
+    margin-right:30px;
+}
+
+.projects-machine .container-images-machine .images-machine .content{
+    padding:30px;
+}
+
+.projects-machine .container-images-machine .images-machine .content h2{
+    font-size:16px;
+    padding-bottom: 10px;
+    color:#ff9900;
+}
+
+.projects-machine .container-images-machine .images-machine .content p{
+    font-size: 12px;
+    line-height: 20px;
+    padding-right:80px;
+    padding-bottom: 20px;
+}
+
+.projects-machine .container-images-machine .images-machine .content a button{
+    background-color: #ff9900;
+    color:#080808;
+    font-weight: 600;
+    padding:10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.projects-machine .container-images-machine .images-machine .content a button:hover{
+    background-color: #845002;
+    color:#cfcfcf;
+}
+
+
+
+
+
 
 /* CONTATO */
 
