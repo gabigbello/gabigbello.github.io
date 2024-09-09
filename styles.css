@@ -284,11 +284,11 @@ span{
     }
     21%,
     40%{
-        content: "Machine Learning";
+        content: "Desenvolvedora Full-stack";
     }
     41%,
     60%{
-        content: "Desenvolvedora Full-stack";
+        content: "Desenvolvedora Python";
     }
     61%,
     80%{
@@ -296,7 +296,7 @@ span{
     }
     81%,
     100%{
-        content:"Ciência de dados & IA";
+        content:"Cientista de dados & IA";
     }
 }
 
@@ -932,10 +932,6 @@ tspan{
 }
 
 
-
-
-
-
 /* CONTATO */
 
 .contato{
@@ -1066,9 +1062,10 @@ section,
     .container .content .boxes .box_two{
         height:40vh;
     }
+
 }
 
-@media(max-width:380px){
+@media(max-width:420px){
     .projects .container-images a{
         font-size:5vw;
         left:13px;
@@ -1098,5 +1095,58 @@ section,
         font-size:5vw;
         text-align: center;
     }
+
+    .container .content .boxes .box_one{
+        height:50vh;
+        width: 80vw;
+    }
+    .container .content .boxes .box_two{
+        height:50vh;
+        width: 80vw;
+    }
+
+    .projects .title-projects h2{
+        transform: rotate(0deg);
+        margin-bottom: 150vh;
+        text-wrap: wrap;
+        font-size: 14px;
+        width:50vw;
+    }
+
+    .projects-machine .title-projects-machine h2{
+        color: #ffbb55;
+        font-size:14px;
+        margin-bottom: 100px;
+        margin-top:0px;
+        text-align: center;
+    }
+
+    .projects-machine .container-images-machine .images-machine{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:50vh;
+        margin-bottom: 150px;
+    }
+
+    .projects-machine .container-images-machine .images-machine img{
+        width:70vw;
+        margin-left:8vw;
+    }
+
+    .projects-machine .container-images-machine .images-machine .content{
+        text-align: center;
+    }
+
+    .projects-machine .container-images-machine .images-machine .content p{
+        font-size: 12px;
+        line-height: 20px;
+        padding-right:10px;
+        padding-bottom: 20px;
+        text-wrap:pretty;
+    }
+
+
 }
 
