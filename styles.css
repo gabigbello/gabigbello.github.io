@@ -280,11 +280,11 @@ span{
 @keyframes words{
     0%,
     20%{
-        content:"Desenvolvedora Front-end";
+        content:"Cientista de dados";
     }
     21%,
     40%{
-        content: "Desenvolvedora Full-stack";
+        content: "Engenheira de Machine Learning & IA";
     }
     41%,
     60%{
@@ -292,11 +292,11 @@ span{
     }
     61%,
     80%{
-        content: "Estudante de UX/UI";
+        content: "Desenvolvedora Front-end";
     }
     81%,
     100%{
-        content:"Cientista de dados & IA";
+        content:"Estudante de UX & UI";
     }
 }
 
